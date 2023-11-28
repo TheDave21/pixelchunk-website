@@ -1,3 +1,37 @@
+.column {
+    width: 50%;
+
+    position: relative;
+    padding: 5px;
+
+    display:block;
+    margin: auto;
+    margin-bottom: 20px;
+
+    left: 0;
+    right: 0;
+
+    background-color: #415A77;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
+
+    overflow: hidden;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Fix for mobile & small devices */
+@media screen and (max-width: 750px) {
+    .column {
+        width: 100%;
+    }
+}
+
 body {
     background-color: var(--background-color);
 
@@ -122,36 +156,3 @@ a {
     --heading-lesser-font-size: 25px;
 }
 
-.column {
-    width: 50%;
-
-    position: relative;
-    padding: 5px;
-
-    display:block;
-    margin: auto;
-    margin-bottom: 20px;
-
-    left: 0;
-    right: 0;
-
-    background-color: #415A77;
-    border: 1px solid;
-    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
-
-    overflow: hidden;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Fix for mobile & small devices */
-@media screen and (max-width: 750px) {
-    .column {
-        width: 100%;
-    }
-}
