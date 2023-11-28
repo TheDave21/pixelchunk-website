@@ -1,3 +1,6 @@
+.column {
+    margin-top: 0px;
+}
 /* Clear floats after the columns */
 .row:after {
     content: "";
