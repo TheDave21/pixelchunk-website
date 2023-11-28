@@ -1,22 +1,4 @@
-.column {
-    width: 50%;
 
-    position: relative;
-    padding: 5px;
-
-    display:block;
-    margin: auto;
-    margin-bottom: 20px;
-
-    left: 0;
-    right: 0;
-
-    background-color: #415A77;
-    border: 1px solid;
-    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
-
-    overflow: hidden;
-}
 
 .buy-button {
     background-color: #00b215;
