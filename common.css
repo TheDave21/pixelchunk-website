@@ -26,9 +26,9 @@
 }
 
 /* Fix for mobile & small devices */
-@media screen and (max-width: 750px) {
+@media all and (orientation:portrait) {
     .column {
-        width: 100%;
+        width: 90%;
     }
 }
 
