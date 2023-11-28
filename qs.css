@@ -1,0 +1,200 @@
+.previous-button,
+.next-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 100%;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #415A7733;
+    transition: ease background-color 0.2s, ease left 0.2s, ease right 0.2s;
+}
+
+/* Position the "next button" to the right */
+.next-button {
+    right: 5px;
+    border-radius: 100%;
+}
+/* position previous button slightly to right */
+.previous-button {
+    left: 5px;
+}  
+/* On hover, add a black background color with a little bit see-through */
+.previous-button:hover,
+.next-button:hover {
+    background-color: #415A77AA;
+    transition: ease background-color 0.2s, ease left 0.2s, ease right 0.2s ease box-shadow 0.2s;
+
+    box-shadow: 5px 5px 12px black;
+}
+
+.next-button-span {
+    position:relative;
+    left: 0;
+    transition: ease left 0.3s;
+}
+
+.previous-button-span {
+    position:relative;
+    right: 0;
+    transition: ease right 0.3s;
+}
+
+.previous-button:hover .previous-button-span {
+    right: 5px;
+    transition: ease background-color 0.2s, ease right 0.3s;
+}
+
+.next-button:hover .next-button-span {
+    left: 5px;
+    transition: ease background-color 0.2s, ease left 0.3s;
+}
+
+.slideshow-container {
+    margin:auto;
+    max-width: 1000px;
+    max-height: 562px;
+    position: relative;
+    margin: auto;
+    display: block;
+    box-shadow: 5px 5px 12px black;
+
+    background-color: #415A77;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
+}
+
+.slides {
+    display:none;
+    height:auto !important;
+    height: 562px;
+    max-height:562px;
+
+    overflow:hidden;
+    object-fit:cover;
+}
+
+.dots {
+    cursor: pointer;
+    height:15px;
+    width:15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1;}
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.column {
+    width: 50%;
+
+    position: relative;
+    padding: 5px;
+
+    display:block;
+    margin: auto;
+    margin-bottom: 20px;
+
+    left: 0;
+    right: 0;
+
+    background-color: #415A77;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
+
+    overflow: hidden;
+}
+
+.buy-button {
+    background-color: #00b215;
+    border-color: #E0E1DD;
+    border-radius: 1px;
+}
+
+.buy-button:hover {
+    transition: 0.3s;
+    background-color: #00cb18;
+
+    padding: 14px 16px;
+}
+
+.curse-button {
+    background-color: #c36800;
+    border-color: #E0E1DD;
+    border-radius: 1px;
+}
+
+.curse-button:hover {
+    transition: 0.3s;
+    background-color: #e37900;
+
+    padding: 14px 16px;
+}
+
+p {
+    text-align: center;
+}
+
+.image-chess2background {
+    border: 1px solid;
+    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
+
+    background-image: url(chess2-background.png);
+
+    background-attachment:scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-row {
+    display: flex;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.column-sidebyside {
+    flex:50%;
+    position: relative;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    margin: 5px;
+    margin-left:25px;
+    margin-right:25px;
+
+    left: 0;
+    right: 0;
+
+    background-color: #415A77;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
+
+    overflow: hidden;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Attach common css file -->
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Attach page specific css file -->
+    <link rel="stylesheet" href="qs.css">
+
+    <!-- Attach Open Sans font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- Attach Google Material Symbols -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- Attach gallery -->
+    <script src="index.js"> </script>
+
+    <!-- Set title of page in browser -->
+    <title>Questionable Skies</title>
+</head>
+
+<body onload="updateGallery(); loop()">
+    <!-- Navbar -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="qs.html" class="active ">Questionable Skies</a></li>
+        <li><a href="chess2.html">Chess 2</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li style="float:right; height:47px; border-right:2px; border-color:white;"><a href="about:blank" class="curse-button"><b>Download on CurseForge <span class="material-symbols-outlined" style="height: 19px; vertical-align: bottom;"><img style="margin-left:4px; height:10px; vertical-align:8px;" src="curseforge-icon.png"></span></b></a></li>
+    </ul>
+    <!-- offset site contents to fit with the navbar -->
+
+    <div style="padding:20px; padding-top:30px; padding-bottom: 0px;">
+        <h1 style="text-align: center;">Questionable Skies</h1>
+
+        <h2 style="text-align:center;">
+            Make your own world in this Minecraft modpack.
+        </h2>
+    </div>
+
+    <div class="column">
+        <h2 style="text-align:center; margin:2px">You Make the World</h2>
+        <p> In this modpack you spawn in the sky, forcing you to create the world around you. This gives you the freedom to create whatever you please without needing to dig out space.</p>
+        <div class=""
+            style="object-fit: cover; display:block; left:0px; margin: auto;">
+            <img src="2023-11-29_08.44.43.png" style="display: block; width:100%; height:auto; margin: auto;">
+        </div>
+    </div>
+
+
+    <div class="column">
+        <h2 style="text-align:center; margin:2px">Discover New Lands</h2>
+        <p> Just because the overworld is gone doesn't mean the rest are. Get your exploration fix with the enhanced Nether or End dimensions. With new biomes, blocks and mobs there's a lot more to these biomes than you'd expect.</p>
+        
+    </div>
+
+
+    <div class="column">
+        <h2 style="text-align:center; margin:2px">Create Advanced Machines</h2>
+        <p> There's a plethora of machinery to create. Use the power of kinetic energy to create contraptions like an automatic metal sifter or a tree harvester. Or go the nuclear route and create fission reactors and steam-powered drones.</p>
+        <div class=""
+            style="object-fit: cover; display:block; left:0px; margin: auto;">
+            <img src="2023-11-29_08.45.15.png" style="display: block; width:100%; height:auto; margin: auto;">
+        </div>
+    </div>
+
+    <div class="column">
+        <h2 style="text-align:center; margin:2px">Magic</h2>
+        <p> With the additions of mods like Botania there's no shortage of magic for you to play with. You can cast spells, craft new gear and travel to new dimensions, and even learn how to fly.
+        </p>
+    </div>
+
+    <div class="column">
+        <h2 style="text-align:center; margin:2px">Multiplayer</h2>
+        <p> 
+            With built in multiplayer support, up to 8 groups can play on the same world at a time. With customized islands and a main hub island to explore each group will have a different experience. You can have as many people as you want in a group. Each group shares progress including quests, and you can set up trades between groups. It's more fun with friends, so bring a few.
+        </p>
+    </div>
+
+    <div class="column">
+        <h2 style="text-align: center; margin:2px">Gallery</h1>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="slides fade">
+                <img src="2023-11-29_08.44.43.png" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="2023-11-29_08.45.07.png" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="2023-11-29_08.45.15.png" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="2023-11-29_08.46.27.png" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="nether-1.png" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="end-1.png" style="width:100%">
+            </div>
+
+            <div class="slides fade">
+                <img src="nether2.png" style="width:100%">
+            </div>
+
+
+            <!-- Next and previous buttons -->
+            <a class="previous-button" onclick="plusSlides(-1)"><span class="previous-button-span material-symbols-outlined">chevron_left</span></a>
+            <a class="next-button" onclick="plusSlides(1)"><span class="next-button-span material-symbols-outlined">chevron_right</span></a>
+        </div>
+    </div>
+</body>
