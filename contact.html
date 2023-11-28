@@ -1,0 +1,90 @@
+<head>
+    <!-- Attach common css file -->
+    <link rel="stylesheet" href="common.css">
+
+    <!-- Attach page specific css file -->
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Attach Open Sans font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+    <!-- Attach Google Material Symbols -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    
+    <!-- Set title of page in browser -->
+    <title>Contact Me</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gec.html">Galactic Expansion Company</a></li>
+        <li><a href="qe.html">Questionable Ethics</a></li>
+        <li><a href="chess2.html">Chess 2</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <!-- offset site contents to fit with the navbar -->
+
+    <div style="padding:20px; padding-top:30px; padding-bottom: 0px;">
+        <h1 style="text-align: center;">Contact Me</h1>
+    </div>
+
+    <div class="flex-display">    
+        <!-- Left column, email form -->
+        <div class="column">
+            <h2 style="text-align:center; margin:2px">Email Me</h2>
+
+                <input type="email" id="email" name="email" placeholder="Enter your email" class="email">
+                <textarea id="contents" name="contents" placeholder="Message contents" rows="6"></textarea>
+
+                <select id="topic" name="topic">
+                    <option value="Topic" selected><em>Choose a topic...</em></option>
+                    <option value="Bug Report">Bug Report</option>
+                    <option value="Feature Request">Feature Request</option>
+                    <option value="Business Inquiry">Business Inquiry</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span><button id="sendButton" onclick="sendEmail()" class="inline-button">Send Email <span id="paperPlane" class="go-button material-symbols-outlined" style="font-size: var(--contact-form-text-size)">send</span></span></button>
+        </div>
+
+        <!-- Right column, contact information -->
+        <div class="column">
+            <h2 style="text-align:center; margin:2px">Contact Information</h2>
+
+            <div style="margin:10px">
+                <p style="margin:0px">Email: davidriordan(at)spotswoodcollege(dot)school(dot)nz</p>
+                <p style="margin:0px">Phone: 0800838383</p>
+                <p style="margin:0px">Discord: Dave#7207</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const delay = ms => new Promise(res => setTimeout(res, ms));
+
+        const sendEmail = async() => {
+            console.log("Send()");
+
+            var sendButton = document.getElementById("sendButton");
+            var paperPlane = document.getElementById("paperPlane");
+
+            paperPlane.classList.remove("go-button");
+            paperPlane.classList.add("go-button-full");
+
+            sendButton.innerHTML = sendButton.innerHTML.replace("Send Email ", "Sending... ");
+
+            disablePaperPlane();
+            await delay(2000);
+
+            paperPlane.style += "display: none;";
+            sendButton.innerHTML = sendButton.innerHTML.replace("Sending... ", "Sent! ");
+
+
+        }
+
+        const disablePaperPlane = async() => {
+            await delay(1000);
+            paperPlane.style = "display: none;";
+        }
+    </script>
+</body>

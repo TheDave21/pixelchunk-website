@@ -1,0 +1,91 @@
+.column {
+    width: 50%;
+
+    position: relative;
+    padding: 5px;
+
+    display:block;
+    margin: auto;
+    margin-bottom: 20px;
+
+    left: 0;
+    right: 0;
+
+    background-color: #415A77;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
+
+    overflow: hidden;
+}
+
+.buy-button {
+    background-color: #00b215;
+    border-color: #E0E1DD;
+    border-radius: 1px;
+}
+
+.buy-button:hover {
+    transition: 0.3s;
+    background-color: #00cb18;
+
+    padding: 14px 16px;
+}
+
+.curse-button {
+    background-color: #c36800;
+    border-color: #E0E1DD;
+    border-radius: 1px;
+}
+
+.curse-button:hover {
+    transition: 0.3s;
+    background-color: #e37900;
+
+    padding: 14px 16px;
+}
+
+p {
+    text-align: center;
+}
+
+.image-chess2background {
+    border: 1px solid;
+    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
+
+    background-image: url(chess2-background.png);
+
+    background-attachment:scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.flex-row {
+    display: flex;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.column-sidebyside {
+    flex:50%;
+    position: relative;
+    padding: 0;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    margin: 5px;
+    margin-left:25px;
+    margin-right:25px;
+
+    left: 0;
+    right: 0;
+
+    background-color: #415A77;
+    border: 1px solid;
+    border-image: linear-gradient(to right, #778DA9, #E0E1DD, #778DA9) 1;
+
+    overflow: hidden;
+}

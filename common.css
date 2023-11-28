@@ -1,0 +1,123 @@
+body {
+    background-color: var(--background-color);
+
+    margin: 0;
+}
+
+/* set heading style */
+h1 {
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size);
+
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-size: var(--heading-lesser-font-size);
+
+    color: var(--text-color);
+
+}
+
+/* set paragraph style */
+p {
+    font-family: var(--main-font);
+
+    color: var(--text-color);
+}
+
+/* navbar style */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+
+    background-color: var(--black-color);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    z-index: 1;
+}
+
+/* set navbar content styles */
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    padding-top: 14px; 
+    padding-bottom: 14px;
+
+    /* Text variables */
+    color: var(--text-color);
+    
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+
+    text-align: center;
+    text-decoration: none;
+
+    transition: 0.3s padding;
+
+}
+
+/* set navbar hover style */
+li a:hover:not(.active, .buy-button, .buy-button-text, .curse-button) {
+    transition: 0.3s;
+    background-color: var(--foreground-element-color);
+
+    padding: 14px 16px;
+}
+
+a {
+    color: var(--text-color);
+    
+    font-family: var(--main-font);
+    font-size: var(--main-font-size);
+
+    text-align: center;
+    text-decoration: none;
+}
+
+.active {
+    background-color: var(--background-color);
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+:root {
+
+    /* Colors
+
+    These are used as variables to keep the entire file consistent.
+    Usage: var(--name); eg var(--background-color) would return #1B263B
+
+    */
+
+    --black-color: #0D1B2A;
+    --background-color: #1B263B;
+    --foreground-element-color: #415A77;
+    --foreground-contrast-color: #778DA9;
+    --button-hover-color: #99acc5;
+    --text-color: #E0E1DD;
+
+    /* Fonts */
+
+    --main-font: 'Open Sans', sans-serif;
+    --heading-font: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --main-font-size: 14px;
+    --heading-font-size: 50px;
+    --heading-lesser-font-size: 25px;
+}
